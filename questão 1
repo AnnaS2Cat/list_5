@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void){
+    int a,b;
+    int *p;
+    
+    printf("diga o valor a :");
+    scanf("%d",&a);
+    printf("diga o valor b :");
+    scanf("%d",&b);
+    if (a>b){
+        p=&a;
+    }
+    else if (b<a){
+        p=&b;
+    }
+    *p = *p - 50;
+    printf("o valor é %d", *p);
+    
+}
